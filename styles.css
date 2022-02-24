@@ -8,26 +8,174 @@ html{
     font-size: 62.5%;
 }
 
-body{
+#body_xamples{
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#container{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 1rem;
+#grid_column_model h2, #grid_area_model h2{
     width: 100%;
-    background-color: #333;
-    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#grid_column_model{
+    width: 100%;
     margin-bottom: 8rem;
 }
 
+#grid_area_model{
+    width: 100%;
+    margin-bottom: 8rem;
+}
 
+#grid_column_model p, #grid_area_model p{
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    line-height: 1.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
+#boxes_container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+    width: 100%;
+    background-color: #333;
+    padding: 2rem;
+}
+
+#container_2a{
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    gap: 0.5rem;
+    width: 100%;
+    height: 36.3rem;
+    background-color: #333;
+    padding: 2rem;
+}
+
+#container_2a div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container_2b{
+    display: none;
+    grid-template-columns: repeat(12, auto);
+    gap: 0.5rem;
+    width: 100%;
+    height: 36.3rem;
+    background-color: #333;
+    padding: 2rem;
+}
+
+#container_2b div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container_2c{
+    display: none;
+    grid-template-columns: repeat(12, auto);
+    gap: 0.5rem;
+    width: 100%;
+    height: 36.3rem;
+    background-color: #333;
+    padding: 2rem;
+}
+
+#container_2c div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header_a{
+    grid-area: 1/1/2/13;
+    height: 8rem;
+    background-color: #3bceac;
+}
+
+#nav_a{
+    grid-area: 2/1/3/13;
+    height: 3rem;
+    background-color: #ee4266;
+}
+
+#aside_a{
+    grid-area: 3/1/4/3;
+    height: 15rem;
+    background-color: #ffd23f;
+}
+
+#main_a{
+    grid-area: 3/3/4/13;
+    height: 15rem;
+    background-color: #0466c8;
+}
+
+#footer_a{
+    /* display: none; */
+    grid-area: 4/1/5/13;
+    height: 5rem;
+    background-color: #0ead69;
+}
+
+#header_b{
+    grid-area: 1/1/2/13;
+    height: 8rem;
+    background-color: #3bceac;
+}
+
+#aside_b{
+    grid-area: 2/1/3/3;
+    height:18.5rem;
+    background-color: #ffd23f;
+}
+
+#main_b{
+    grid-area: 2/3/3/13;
+    height:18.5rem;
+    background-color: #0466c8;
+}
+
+#footer_b{
+    height: 5rem;
+    grid-area: 3/1/4/13;
+    background-color: #0ead69;
+}
+
+#header_c{
+    grid-area: 1/1/2/13;
+    height: 8rem;
+    background-color: #3bceac;
+}
+
+#nav_c{
+    grid-area: 2/1/3/13;
+    height: 3rem;
+    background-color: #ee4266;
+}
+
+#main_c{
+    grid-area: 3/1/4/13;
+    height: 15rem;
+    background-color: #0466c8;
+}
+
+#footer_c{
+    height: 5rem;
+    grid-area: 4/1/5/13;
+    grid-area: 4/1/5/13;
+    background-color: #0ead69;
+}
 
 .box{
     padding: 1rem;
@@ -52,7 +200,7 @@ body{
     justify-content: space-around;
     margin-bottom: 2rem;
     width: 100%;
-   color: #ffffff;
+    color: #ffffff;
 }
 
 .selection_columns{
@@ -61,14 +209,15 @@ body{
     background-color: crimson;
 }
 
-
-
-.active{
-    background-color: green;
+.selection_model{
+    padding: 1rem;
+    border-radius: 0.3rem;
+    background-color: crimson;
 }
 
-
-
+.active_button{
+    background-color: green;
+}
 
 @media (min-width: 768px){
     body{
@@ -76,24 +225,39 @@ body{
         padding-right: 3rem;
     }
 
-    .box{
-        font-size: 2rem;
-    }
-
-    .selection{
+    .select_buttons{
         font-size: 1.5rem;
-        cursor: pointer;
     }
 
-    .selection:hover{
-        transform: scale(1.05);
-        transition: all 0.2s;
+    .selection_columns{
+        font-size: 1.5rem;
+        
     }
 }
 
 @media (min-width: 1200px){
-    body{
-        padding-left: 10rem;
-        padding-right: 10rem;
+    #body_xamples{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    #grid_column_model{
+        width: 45%;
+        min-height: 50rem;
+        margin-bottom: 0;
+    }
+    
+    #grid_area_model{
+        width: 45%;
+        min-height: 50rem;
+        margin-bottom: 0;
+    }
+
+    .select_buttons div:hover{
+        cursor: pointer;
+        transform: scale(1.05);
     }
 }

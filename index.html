@@ -7,34 +7,82 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="select_buttons">
-        <div id="_1_column" class="selection_columns active">
-            1 Columna
+<body id="body_xamples">
+    <div id="grid_column_model">
+        <h2>Esquema de columnas con CSS Grid</h2>
+        <p>Teniendo un número de elementos en un contenedor, los distribuyo en una cantidad determinada de columnas, tomando cada 
+            elemento el ancho automático dependiendo de la distribución. Haz click en cada botón para ver como cambia la distribución.</p>
+        <div class="select_buttons">
+            <div id="_1_column" class="selection_columns active_button">
+                1 Columna
+            </div>
+            <div id="_2_column" class="selection_columns">
+                2 Columnas
+            </div>
+            <div id="_3_column" class="selection_columns">
+                3 Columnas
+            </div>
+            <div id="_4_column" class="selection_columns">
+                4 Columnas
+            </div>
+            <div id="_5_column" class="selection_columns">
+                5 Columnas
+            </div>
         </div>
-        <div id="_2_column" class="selection_columns">
-            2 Columnas
-        </div>
-        <div id="_3_column" class="selection_columns">
-            3 Columnas
-        </div>
-        <div id="_4_column" class="selection_columns">
-            4 Columnas
-        </div>
-        <div id="_5_column" class="selection_columns">
-            5 Columnas
+        
+        <div id="boxes_container">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+                <div class="box">7</div>
+                <div class="box">8</div>
         </div>
     </div>
-    <div id="container">
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
-        <div class="box">5</div>
-        <div class="box">6</div>
-        <div class="box">7</div>
-        <div class="box">8</div>
+
+    <div id="grid_area_model">
+        <h2>Maquetación con CSS Grid (areas)</h2>
+        <p>Presento tres mdelos de maquetación web, aplicados mediante CSS Grid (areas), en este caso la disposición se mantiene
+            sin importar el tamaño del dispositivo, pero pudieramos hacer que la disposición cambie con responsive design</p>
+        <div class="select_buttons">
+            <div id="modelo_1" class="selection_model active_button">
+                Modelo 1
+            </div>
+            <div id="modelo_2" class="selection_model">
+                Modelo 2
+            </div>
+            <div id="modelo_3" class="selection_model">
+                Modelo 3
+            </div>
+        </div>
+        
+        <div id="container_2a">
+            <div id="header_a" class="box_2">Header</div>
+            <div id="nav_a" class="box_2">Nav</div>
+            <div id="aside_a" class="box_2">Aside</div>
+            <div id="main_a" class="box_2">Main</div>
+            <div id="footer_a" class="box_2">Footer</div>
+        </div>
+    
+        <div id="container_2b">
+            <div id="header_b" class="box_2">Header</div>
+            <!-- <div id="nav_b" class="box_2">Nav</div> -->
+            <div id="aside_b" class="box_2">Aside</div>
+            <div id="main_b" class="box_2">Main</div>
+            <div id="footer_b" class="box_2">Footer</div>
+        </div>
+    
+        <div id="container_2c">
+            <div id="header_c" class="box_2">Header</div>
+            <div id="nav_c" class="box_2">Nav</div>
+            <!-- <div id="aside_c" class="box_2">Aside</div> -->
+            <div id="main_c" class="box_2">Main</div>
+            <div id="footer_c" class="box_2">Footer</div>
+        </div>
     </div>
+    
 
 
     
